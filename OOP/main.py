@@ -12,11 +12,11 @@ class Camion(Vehicle):
         self.horse_power = horse_power
         self.weight = weight
 
-    def puissance_par_roues_motrices(self):
+    def PuissanceParRouesMotrices(self):
         pow=self.horse_power/self.nb_de_roues_motrices
         print("La puissance par roue est de", pow,"!")
     
-    def nb_de_roues_pas_motrices(self):
+    def NbDeRouesPasMotrices(self):
         N=self.nb_de_roues-self.nb_de_roues_motrices
         print("Ce camion a ",N," roues motrices!")
 
