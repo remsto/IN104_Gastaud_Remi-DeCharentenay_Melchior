@@ -4,6 +4,13 @@ class Vehicle:
         self.horse_power = horse_power
         self.weight = weight
 
+        def ForceGravité(self):
+            return 9,81*self.weight
+        
+        def GetPuissance(self):
+            print("Le véhicule a une puissance de ", self.horse_power)
+
+        
 
 class Submarine(Vehicle):
     def __init__(self, size, horse_power, weight, max_depth, nb_propeller):
