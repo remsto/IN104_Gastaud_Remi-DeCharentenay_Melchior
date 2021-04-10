@@ -4,11 +4,11 @@ class Vehicle:
         self.horse_power = horse_power
         self.weight = weight
 
-        def ForceGravité(self):
-            return 9,81*self.weight
+    def ForceGravité(self):
+         return 9.81*self.weight
         
-        def GetPuissance(self):
-            print("Le véhicule a une puissance de ", self.horse_power)
+    def GetPuissance(self):
+        return self.horse_power
 
         
 
@@ -59,3 +59,9 @@ print(camion_rouge.PuissanceParRouesMotrices())
 
 # Expected value : 4
 print(camion_rouge.NbDeRouesPasMotrices())
+
+# Expected value : 19620
+print(camion_rouge.ForceGravité())
+
+# Expected value : 150
+print(camion_rouge.GetPuissance())
