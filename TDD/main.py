@@ -1,4 +1,4 @@
-class InputError(Exception):
+class InputError(Exception):pass
 
 class Vehicle:
     def __init__(self, size, horse_power, weight):
