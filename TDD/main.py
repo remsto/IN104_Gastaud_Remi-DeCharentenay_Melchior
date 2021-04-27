@@ -46,24 +46,3 @@ class Camion(Vehicle):
         return N
 
 
-foudroyant = Submarine(20, 500, 600, 10000, 4)
-
-# Expected value : 125
-print(foudroyant.getPowerPerPropeller())
-
-# Expected value : 20
-print(foudroyant.getSize())
-
-camion_rouge = Camion(8,4,10,150,2000)
-
-# Expected value : 37.5
-print(camion_rouge.PuissanceParRouesMotrices())
-
-# Expected value : 4
-print(camion_rouge.NbDeRouesPasMotrices())
-
-# Expected value : 19620
-print(camion_rouge.ForceGravité())
-
-# Expected value : 150
-print(camion_rouge.GetPuissance())
