@@ -13,7 +13,7 @@ class Test(unittest.TestCase):
         self.assertRaises(main.BadArgumentsError,sous_marin.getSize)
     def test_getPuissance(self):
         sous_marin = main.Submarine(20, 500, 600, 10000, 4)
-        self.assertEqual(sous_marin.GetPuissance(),20)
+        self.assertEqual(sous_marin.GetPuissance(),500)
 
 
 if __name__ == '__main__':
