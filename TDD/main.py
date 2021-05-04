@@ -26,6 +26,8 @@ class Submarine(Vehicle):
         return self.horse_power/self.nb_propeller
 
     def getSize(self):
+        if self.size<0:
+            raise BadArgumentsError("Size must be positive");
         return self.size
 
 
