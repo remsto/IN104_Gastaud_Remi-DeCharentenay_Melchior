@@ -3,14 +3,17 @@ import main
 
 class Test(unittest.TestCase):
     def test_getPowerPerPropeller(self):
-        sous_marin = submarine(20, 500, 600, 10000, 4)
-        self.assertEqual(submarine.getPowerPerPropeller(),125);
+        sous_marin = main.submarine(20, 500, 600, 10000, 4)
+        self.assertEqual(main.submarine.getPowerPerPropeller(),125);
     def test_getSize(self):
-        sous_marin = submarine(20, 500, 600, 10000, 4)
-        self.assertEqual(submarine.getSize(),20);
+        sous_marin = main.submarine(20, 500, 600, 10000, 4)
+        self.assertEqual(main.submarine.getSize,20);
     def test_taille_negatif(self):
-        sous_marin = submarine(-10, 500, 600, 10000, 4)
-        self.assertRaises(main.BadArgumentsError,submarine.getSize())
+        sous_marin = main.submarine(-10, 500, 600, 10000, 4)
+        self.assertRaises(main.BadArgumentsError,main.submarine.getSize)
+    def test_getPuissance(self):
+        sous_marin = main.submarine(20, 500, 600, 10000, 4)
+        self.assertEqual(main.submarine.GetPuissance,20);
 
     
 
