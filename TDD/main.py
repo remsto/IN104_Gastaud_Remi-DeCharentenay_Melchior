@@ -46,3 +46,7 @@ class Camion(Vehicle):
         return N
 
 
+camion_vert = Camion(8,4,10,150,2000)
+
+if camion_vert.NbDeRouesPasMotrices<0:
+    raise Exception('Nombre de roues pas motrices négatives')
