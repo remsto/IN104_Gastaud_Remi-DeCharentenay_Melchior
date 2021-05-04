@@ -6,7 +6,7 @@ class Vehicle:
         self.horse_power = horse_power
         self.weight = weight
 
-    def ForceGravité(self):
+    def ForceGravite(self):
          return 9.81*self.weight
         
     def GetPuissance(self):
