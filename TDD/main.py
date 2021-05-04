@@ -26,6 +26,8 @@ class Submarine(Vehicle):
         return self.horse_power/self.nb_propeller
 
     def getSize(self):
+        if self.size<0:
+            raise BadArgumentsError("Size must be positive");
         return self.size
 
 
@@ -43,10 +45,10 @@ class Camion(Vehicle):
 
     def NbDeRouesPasMotrices(self):
         N = self.nb_de_roues-self.nb_de_roues_motrices
+        if N<0:
+           raise BadArgumentsError('Nombre de roues pas motrices négatives')
         return N
 
 
-camion_vert = Camion(8,4,10,150,2000)
 
-if camion_vert.NbDeRouesPasMotrices<0:
-    raise Exception('Nombre de roues pas motrices négatives')
+
